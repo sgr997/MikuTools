@@ -102,7 +102,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="../assets/alipay.PNG" alt="alipay">
+                    <img src="../assets/alipay.png" alt="alipay">
                     <div class="name">
                         支付宝
                     </div>
