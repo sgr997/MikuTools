@@ -111,8 +111,8 @@ export default {
                 new Blob([data.buffer], { type: `video/${type}` })
             );
             this.loading = false;
-        },
-    },
+        }
+    }
 };
 </script>
 
