@@ -1,5 +1,5 @@
 export default [
-    'MikuTools',
+    '随用工具箱',
     '工具集合',
     '工具箱',
     '在线工具',

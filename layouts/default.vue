@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/outdatedbrowser.min.css" />
         <div id="outdated"></div>
         <script src="/js/outdatedbrowser.js"></script>
-        
+
         <!-- 路由过渡 -->
         <style v-if="$store.state.setting.animations">
             .page-enter-active,
@@ -56,7 +56,7 @@
             <div v-if="$store.state.setting.bg.layer" class="bg-layer"></div>
             <Navbar />
             <nuxt class="view" />
-            <Vfooter v-show="$route.path === '/'" />
+            <!--            <Vfooter v-show="$route.path === '/'" />-->
         </main>
         <!-- 自定义CSS -->
         <style v-if="$store.state.setting.css">

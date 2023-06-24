@@ -548,11 +548,12 @@ export const state = () => {
                 {
                     name: '工具隐藏',
                     path: '/hide_tool'
-                },
-                {
-                    name: '友情链接',
-                    path: '/links'
                 }
+                // ,
+                // {
+                //     name: '友情链接',
+                //     path: '/links'
+                // }
             ]
         }
     ];

@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <Welcome />
+        <Welcome/>
         <Search v-model="searchText" @enter="enterFirst">
             <template slot-scope="data">
                 <nuxt-link
@@ -15,8 +15,32 @@
                 </nuxt-link>
             </template>
         </Search>
-        
-        <Favorites v-show="!searchText" />
+
+        <Favorites v-show="!searchText"/>
+
+
+        <nya-container v-if="!$store.state.setting.hideNotice" v-show="!searchText" title="公告"
+                       icon="volume-down-outline">
+            <ul class="nya-list">
+                <!--                <li>本项目基于 <a href="https://github.com/Ice-Hazymoon/MikuTools" target="_blank" rel="noopener noreferrer">MikuTools</a> 构建而成</li>-->
+                <!--                <li>-->
+                <!--                    <div class="badge-info">-->
+                <!--                        <span class="badge hot">热门</span> <span class="badge vip">VIP</span> <span class="badge new">新功能</span> <span class="badge recommend">推荐</span>-->
+                <!--                    </div>-->
+                <!--                </li>-->
+                <li><b>欢迎将本站收藏到收藏夹，以便以后使用</b></li>
+                <li>
+                    本站域名：<a
+                        :href="$store.state.env.url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >{{ $store.state.env.domain }}</a>
+                </li>
+                <li v-if="$store.state.isMobile.any">
+                    如果遇到无法使用或者样式问题，请更换浏览器后重试，推荐使用 Chrome 浏览器，对 iOS 设备兼容性可能不太好
+                </li>
+            </ul>
+        </nya-container>
 
         <nya-container
             v-if="$store.state.setting.hideCategory"
@@ -62,44 +86,23 @@
             </nya-container>
         </template>
 
-        <nya-container v-if="!$store.state.setting.hideNotice" v-show="!searchText" title="公告" icon="volume-down-outline">
-            <ul class="nya-list">
-                <li>本项目基于 <a href="https://github.com/Ice-Hazymoon/MikuTools" target="_blank" rel="noopener noreferrer">MikuTools</a> 构建而成</li>
-                <li>
-                    <div class="badge-info">
-                        <span class="badge hot">热门</span> <span class="badge vip">VIP</span> <span class="badge new">新功能</span> <span class="badge recommend">推荐</span>
-                    </div>
-                </li>
-                <li><b>欢迎将本站收藏到收藏夹，以便以后使用</b></li>
-                <li>
-                    本站域名：<a
-                        :href="$store.state.env.url"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >{{ $store.state.env.domain }}</a>
-                </li>
-                <li v-if="$store.state.isMobile.any">
-                    如果遇到无法使用或者样式问题，请更换浏览器后重试，推荐使用 Chrome 浏览器，对 iOS 设备兼容性可能不太好
-                </li>
-            </ul>
-        </nya-container>
-
-        <nya-container v-if="!$store.state.setting.hidePay" v-show="!searchText" title="打赏" icon="credit-card-outline">
+        <nya-container v-if="!$store.state.setting.hidePay" v-show="!searchText" title="打赏"
+                       icon="credit-card-outline">
             <ul class="pay">
+                <!--                <li>-->
+                <!--                    <img src="../assets/qq.png" alt="qq">-->
+                <!--                    <div class="name">-->
+                <!--                        QQ-->
+                <!--                    </div>-->
+                <!--                </li>-->
                 <li>
-                    <img src="../assets/qq.png" alt="qq">
-                    <div class="name">
-                        QQ
-                    </div>
-                </li>
-                <li>
-                    <img src="../assets/weixin.png" alt="weixin">
+                    <img src="../assets/weixin.PNG" alt="weixin">
                     <div class="name">
                         微信
                     </div>
                 </li>
                 <li>
-                    <img src="../assets/alipay.png" alt="alipay">
+                    <img src="../assets/alipay.PNG" alt="alipay">
                     <div class="name">
                         支付宝
                     </div>
@@ -114,6 +117,7 @@ import Favorites from '~/components/Favorites';
 import Search from '~/components/Search';
 import isMobile from 'ismobilejs';
 import Welcome from '~/components/Welcome';
+
 export default {
     name: 'Home',
     components: {
@@ -172,16 +176,19 @@ export default {
         display: block;
         margin-bottom: 15px;
     }
+
     table {
         width: 100%;
         table-layout: auto;
     }
+
     ._ad {
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .nya-btn {
         position: relative;
         margin: 7px;
@@ -196,11 +203,13 @@ export default {
         background-color: transparent;
         font-size: 18px;
         border-radius: 4px;
+
         &:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 16px 0px rgba(10, 14, 29, 0.04),
                 0px 8px 64px 0px rgba(10, 14, 29, 0.08);
         }
+
         @media (max-width: 1050px) {
             width: calc(25% - 14px);
         }
@@ -213,28 +222,33 @@ export default {
             width: calc(50% - 10px);
         }
     }
+
     .pay {
         width: 100%;
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: space-around;
+
         li {
             margin: 0;
             list-style: none;
             padding: 10px;
+
             .name {
                 text-align: center;
                 font-size: 25px;
                 font-weight: bold;
                 margin-top: 5px;
             }
+
             img {
                 width: 200px;
                 max-width: 100%;
             }
         }
     }
+
     .badge {
         &::after {
             content: '';
@@ -248,26 +262,33 @@ export default {
             height: 8px;
             border-radius: 50%;
         }
+
         &.new::after {
             background-color: var(--theme-success);
         }
+
         &.hot::after {
             background-color: var(--theme-danger);
         }
+
         &.vip::after {
             background-color: #f79817;
         }
+
         &.recommend::after {
             background-color: var(--theme);
         }
     }
+
     .badge-info {
         display: inline-flex;
         align-items: center;
+
         .badge {
             display: inline-flex;
             margin-right: 10px;
             align-items: center;
+
             &::after {
                 position: relative;
                 left: auto;
