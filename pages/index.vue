@@ -96,7 +96,7 @@
                 <!--                    </div>-->
                 <!--                </li>-->
                 <li>
-                    <img src="../assets/weixin.PNG" alt="weixin">
+                    <img src="../assets/weixin.png" alt="weixin">
                     <div class="name">
                         微信
                     </div>
