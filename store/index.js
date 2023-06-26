@@ -20,7 +20,7 @@ export const state = () => ({
         js: '',
         inNewTab: null,
         bg: {
-            type: 'none',
+            type: 'bing',
             upload: {
                 url: '',
                 deleteUrl: ''

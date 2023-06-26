@@ -1,179 +1,15 @@
 export const state = () => {
     const tools = [
         {
-            title: '其他工具',
+            title: 'AI网站',
             icon: 'layers-outline',
             list: [
                 {
-                    name: '屏幕录制',
-                    path: '/screen_record',
+                    name: 'ChatGPT',
+                    path: '/my_chatgpt',
                     head: {
-                        keywords: ['屏幕录制', '在线录屏'],
-                        description: '在网页上完成录屏'
-                    }
-                },
-                {
-                    name: '番茄时钟',
-                    path: '/pomodoro_technique',
-                    head: {
-                        keywords: ['在线番茄时钟', '番茄工作法'],
-                        description: '在线番茄时钟'
-                    }
-                },
-                {
-                    name: '人生小格',
-                    path: '/lifecount',
-                    head: {
-                        keywords: [
-                            '人生小格',
-                            '人生进度条',
-                            'lifecount',
-                            '生命进度'
-                        ],
-                        description: '人生小格'
-                    }
-                },
-                {
-                    name: '随机数生成',
-                    path: '/random',
-                    head: {
-                        keywords: ['在线随机数生成'],
-                        description: '在线随机数生成'
-                    }
-                },
-                {
-                    name: '图片加包浆',
-                    path: '/image_patina',
-                    head: {
-                        keywords: [
-                            '图片做旧',
-                            '表情包做旧',
-                            '电子包浆',
-                            '表情包包浆'
-                        ],
-                        description: '图片包浆'
-                    }
-                },
-                {
-                    name: 'LINE 贴纸下载',
-                    path: '/line_sticker_download',
-                    head: {
-                        keywords: [
-                            '怎么下载LINE表情包',
-                            '怎么下载LINE贴纸',
-                            '怎么保存LINE表情包',
-                            'LINE表情包png'
-                        ],
-                        description: 'LINE贴纸在线下载'
-                    }
-                },
-                {
-                    name: '帮你百度',
-                    path: '/search_help',
-                    head: {
-                        keywords: ['帮你百度', '怎么用百度', '怎么用谷歌'],
-                        description: '帮你百度'
-                    }
-                },
-                {
-                    name: 'SS/R/V2ray 配置解析',
-                    path: '/ssr_decode',
-                    head: {
-                        keywords: [
-                            'SSR配置解密',
-                            'SS配置解密',
-                            'V2ray配置解密'
-                        ],
-                        description: '在线SSR配置解析'
-                    }
-                },
-                {
-                    name: '亲戚关系计算器',
-                    path: '/relatives_name',
-                    head: {
-                        keywords: ['亲戚关系计算器'],
-                        description: '在线亲戚关系计算器'
-                    }
-                },
-                {
-                    name: '二维码生成/解析',
-                    path: '/qrcode_generation',
-                    head: {
-                        keywords: ['在线二维码生成', '在线二维码内容解析'],
-                        description: '二维码生成/解析'
-                    }
-                },
-                {
-                    name: '这是什么动漫',
-                    path: '/what_anime_is_this',
-                    head: {
-                        keywords: ['根据截图搜索动漫', 'whatanime'],
-                        description: '根据截图搜索动漫'
-                    }
-                },
-                {
-                    name: '中国传统色',
-                    path: '/china_colors',
-                    head: {
-                        keywords: ['中国传统色'],
-                        description: '中国传统色'
-                    }
-                },
-                {
-                    name: '日本传统色',
-                    path: '/japan_colors',
-                    head: {
-                        keywords: ['日本传统色', '日本の伝統色'],
-                        description: '日本传统色'
-                    }
-                },
-                {
-                    name: '颜色处理',
-                    path: '/color',
-                    head: {
-                        keywords: ['hex转rgb', '颜色代码转换', '在线颜色选择'],
-                        description: '在线图片选择'
-                    }
-                },
-                {
-                    name: '收款码合并',
-                    path: '/universal_pay',
-                    head: {
-                        keywords: [
-                            '免费收款码合并',
-                            '免费三码合一',
-                            '支付宝收款码合并',
-                            '微信收款码合并',
-                            'QQ收款码合并'
-                        ],
-                        description: '在线免费收款码合并'
-                    }
-                },
-                {
-                    name: '温度单位转换',
-                    path: '/temperature_conversion',
-                    head: {
-                        keywords: [
-                            '温度单位转换',
-                            '摄氏度单位转换',
-                            '华氏度转单位换',
-                            '开氏度单位转换',
-                            '兰氏度单位转换',
-                            '列氏度单位转换'
-                        ],
-                        description: '在线国际温度单位转换'
-                    }
-                },
-                {
-                    name: '身份证号码',
-                    path: '/chinese_id',
-                    head: {
-                        keywords: [
-                            '身份证号码查询',
-                            '随机身份证号码生成',
-                            '身份证信息查询'
-                        ],
-                        description: '身份证号码查询/生成'
+                        keywords: ['ChatGPT', 'AI聊天', '聊天'],
+                        description: 'ChatGPT镜像网站，免费的GPT3.5模型'
                     }
                 }
             ]
@@ -533,6 +369,184 @@ export const state = () => {
                     head: {
                         keywords: ['正则大全'],
                         description: '正则大全'
+                    }
+                }
+            ]
+        },
+        {
+            title: '其他工具',
+            icon: 'layers-outline',
+            list: [
+                {
+                    name: '屏幕录制',
+                    path: '/screen_record',
+                    head: {
+                        keywords: ['屏幕录制', '在线录屏'],
+                        description: '在网页上完成录屏'
+                    }
+                },
+                {
+                    name: '番茄时钟',
+                    path: '/pomodoro_technique',
+                    head: {
+                        keywords: ['在线番茄时钟', '番茄工作法'],
+                        description: '在线番茄时钟'
+                    }
+                },
+                {
+                    name: '人生小格',
+                    path: '/lifecount',
+                    head: {
+                        keywords: [
+                            '人生小格',
+                            '人生进度条',
+                            'lifecount',
+                            '生命进度'
+                        ],
+                        description: '人生小格'
+                    }
+                },
+                {
+                    name: '随机数生成',
+                    path: '/random',
+                    head: {
+                        keywords: ['在线随机数生成'],
+                        description: '在线随机数生成'
+                    }
+                },
+                {
+                    name: '图片加包浆',
+                    path: '/image_patina',
+                    head: {
+                        keywords: [
+                            '图片做旧',
+                            '表情包做旧',
+                            '电子包浆',
+                            '表情包包浆'
+                        ],
+                        description: '图片包浆'
+                    }
+                },
+                {
+                    name: 'LINE 贴纸下载',
+                    path: '/line_sticker_download',
+                    head: {
+                        keywords: [
+                            '怎么下载LINE表情包',
+                            '怎么下载LINE贴纸',
+                            '怎么保存LINE表情包',
+                            'LINE表情包png'
+                        ],
+                        description: 'LINE贴纸在线下载'
+                    }
+                },
+                {
+                    name: '帮你百度',
+                    path: '/search_help',
+                    head: {
+                        keywords: ['帮你百度', '怎么用百度', '怎么用谷歌'],
+                        description: '帮你百度'
+                    }
+                },
+                {
+                    name: 'SS/R/V2ray 配置解析',
+                    path: '/ssr_decode',
+                    head: {
+                        keywords: [
+                            'SSR配置解密',
+                            'SS配置解密',
+                            'V2ray配置解密'
+                        ],
+                        description: '在线SSR配置解析'
+                    }
+                },
+                {
+                    name: '亲戚关系计算器',
+                    path: '/relatives_name',
+                    head: {
+                        keywords: ['亲戚关系计算器'],
+                        description: '在线亲戚关系计算器'
+                    }
+                },
+                {
+                    name: '二维码生成/解析',
+                    path: '/qrcode_generation',
+                    head: {
+                        keywords: ['在线二维码生成', '在线二维码内容解析'],
+                        description: '二维码生成/解析'
+                    }
+                },
+                // {
+                //     name: '这是什么动漫',
+                //     path: '/what_anime_is_this',
+                //     head: {
+                //         keywords: ['根据截图搜索动漫', 'whatanime'],
+                //         description: '根据截图搜索动漫'
+                //     }
+                // },
+                {
+                    name: '中国传统色',
+                    path: '/china_colors',
+                    head: {
+                        keywords: ['中国传统色'],
+                        description: '中国传统色'
+                    }
+                },
+                {
+                    name: '日本传统色',
+                    path: '/japan_colors',
+                    head: {
+                        keywords: ['日本传统色', '日本の伝統色'],
+                        description: '日本传统色'
+                    }
+                },
+                {
+                    name: '颜色处理',
+                    path: '/color',
+                    head: {
+                        keywords: ['hex转rgb', '颜色代码转换', '在线颜色选择'],
+                        description: '在线图片选择'
+                    }
+                },
+                {
+                    name: '收款码合并',
+                    path: '/universal_pay',
+                    head: {
+                        keywords: [
+                            '免费收款码合并',
+                            '免费三码合一',
+                            '支付宝收款码合并',
+                            '微信收款码合并',
+                            'QQ收款码合并'
+                        ],
+                        description: '在线免费收款码合并'
+                    }
+                },
+                {
+                    name: '温度单位转换',
+                    path: '/temperature_conversion',
+                    head: {
+                        keywords: [
+                            '温度单位转换',
+                            '摄氏度单位转换',
+                            '华氏度转单位换',
+                            '开氏度单位转换',
+                            '兰氏度单位转换',
+                            '列氏度单位转换'
+                        ],
+                        description: '在线国际温度单位转换'
+                    }
+                },
+                {
+                    name: '身份证号码',
+                    path: '/chinese_id',
+                    head: {
+                        keywords: [
+                            '身份证号码查询',
+                            '随机身份证号码生成',
+                            '身份证信息查询'
+                        ],
+                        description: '身份证号码查询/生成'
                     }
                 }
             ]
